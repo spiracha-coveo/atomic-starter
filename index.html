@@ -29,26 +29,13 @@
         <!-- atomic-search-layout is the top level component required for the automatic positions of elements -->
         <atomic-search-layout>
             <atomic-layout-section section="search">
-                <atomic-search-box></atomic-search-box>
+                <atomic-search-box>
+                  <atomic-search-box-recent-queries></atomic-search-box-recent-queries>
+                  <atomic-search-box-instant-results></atomic-search-box-instant-results>
+                </atomic-search-box>
             </atomic-layout-section>
             <atomic-layout-section section="main">
-                <button id="custom-button">Click me!</button>
-                <atomic-layout-section section="facets">
-                    <atomic-facet-manager> 
-                        <atomic-facet
-                        field="source"
-                        label="Source"
-                        ></atomic-facet> 
-                        <atomic-facet
-                        field="language"
-                        label="Language"
-                        ></atomic-facet>
-                    </atomic-facet-manager>
-                </atomic-layout-section>
                 <atomic-layout-section section="results">
-                    <atomic-layout-section section="status">
-                        <atomic-refine-toggle></atomic-refine-toggle>
-                    </atomic-layout-section>
                     <atomic-result-list></atomic-result-list>
                 </atomic-layout-section>
                 <atomic-layout-section section="pagination">
